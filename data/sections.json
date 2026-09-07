@@ -3235,6 +3235,18 @@
             "updated": "2026-08-31",
             "snapshot": "2026-08-31"
           }
+        },
+        {
+          "name": "UpClaw",
+          "repo": "okdkebm/UpClaw",
+          "desc": "Single-file, zero-dependency Python CLI that runs a structured pentest pipeline (fingerprint, recon, 29 stdlib security checks incl. sqli/xss/ssti/subdomain-takeover/js-secrets/graphql) and optionally hands findings to any OpenAI-compatible model for prioritized analysis (scan --ai).",
+          "license": "Apache-2.0",
+          "status": [
+            "open_source"
+          ],
+          "flags": [
+            "authorized_testing_only"
+          ]
         }
       ]
     },
