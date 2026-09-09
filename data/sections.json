@@ -3561,6 +3561,14 @@
                 "updated": "2025-04-25",
                 "snapshot": "2026-08-17"
               }
+            },
+            {
+              "name": "http-detection-agent",
+              "repo": "ai-blueteam/http-detection-agent",
+              "desc": "Rust CLI and local MCP server for capability-aware HTTP attack detection.",
+              "status": [
+                "open_source"
+              ]
             }
           ]
         },

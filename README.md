@@ -366,6 +366,7 @@ Hyper-specific AI/ML tools for a single offensive-security, recon, or detection 
   - **Related:** [Automatic Yara Rule Generation Using Biclustering](https://arxiv.org/abs/2009.03779)
 - **[yaraml_rules](https://github.com/sophos/yaraml_rules)** 🟢🔬 — Research code that trains scikit-learn classifiers on malware and benign corpora, then compiles the learned model into deployable YARA rules. *(Sophos)* — **note:** historical research reference; the maintained value is the ML-to-YARA technique, not a current detection product. *(★ 215 · updated 2020-12-18)*
 - **[RuleLLM](https://github.com/zhang-xr/RuleLLM)** 🟢🔬 — 🅑 LLM-assisted malware-rule generator that clusters malicious code samples and produces/refines/validates YARA and Semgrep rules. — **note:** MIT-licensed research prototype; requires OpenAI-compatible API access plus YARA/Semgrep validators. *(★ 12 · updated 2025-04-25)*
+- **[http-detection-agent](https://github.com/ai-blueteam/http-detection-agent)** 🟢 — Rust CLI and local MCP server for capability-aware HTTP attack detection.
 
 ### Defensive Trained-Model Detectors
 
