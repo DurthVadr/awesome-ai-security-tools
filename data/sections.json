@@ -4683,7 +4683,10 @@
           "name": "DeepZero",
           "repo": "416rehman/DeepZero",
           "desc": "Resumable Windows driver research framework combining Ghidra decompilation, static analysis, and optional LLM assessment through YAML pipelines.",
-          "status": ["open_source", "research"],
+          "status": [
+            "open_source",
+            "research"
+          ],
           "license": "MIT"
         },
         {
