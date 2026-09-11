@@ -525,6 +525,8 @@ LLM-assisted binary analysis and traffic inspection.
   - **Related:** [burpgpt](https://github.com/aress31/burpgpt)
 - **[REA](https://github.com/morluto/rea)** 🟢 — Local CLI and MCP toolkit for agent-assisted reverse engineering of native binaries, managed PE/CLI files, JavaScript/Electron apps, and browser runtimes, using Hopper or an operator-provided Ghidra installation. — **note:** deep native analysis uses separately licensed Hopper or operator-installed Ghidra. Setup can modify agent MCP registrations after interactive approval, and dynamic providers run with the current user's permissions; analyze only authorized artifacts. *(★ 346 · updated 2026-08-14)*
   - **Related:** [GhidraMCP](https://github.com/LaurieWired/GhidraMCP) · [ReVa](https://github.com/cyberkaida/reverse-engineering-assistant)
+- **[Open-ReverseLab](https://github.com/LING71671/open-reverselab)** 🟢⚠️ — Agent-native AI reverse-engineering platform whose MCP server exposes Ghidra headless analysis (ghidra_headless_analyze, ghidra_summary_*) plus Frida, x64dbg, Rizin and YARA tooling, backed by a runnable CTF/APK/PE attack knowledge base. *(★ 1,101 · updated 2026-09-08)*
+  - **Related:** [GhidraMCP](https://github.com/LaurieWired/GhidraMCP) · [ReVa](https://github.com/cyberkaida/reverse-engineering-assistant)
 
 ---
 
