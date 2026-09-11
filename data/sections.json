@@ -4680,6 +4680,16 @@
       "intro": "LLM-assisted binary analysis and traffic inspection.",
       "entries": [
         {
+          "name": "DeepZero",
+          "repo": "416rehman/DeepZero",
+          "desc": "Resumable Windows driver research framework combining Ghidra decompilation, static analysis, and optional LLM assessment through YAML pipelines.",
+          "status": [
+            "open_source",
+            "research"
+          ],
+          "license": "MIT"
+        },
+        {
           "name": "Gepetto",
           "repo": "JusticeRage/Gepetto",
           "desc": "IDA Pro plugin: GPT adds comments and meaningful variable names.",

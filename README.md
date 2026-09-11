@@ -496,6 +496,7 @@ AI agents for SOC alert triage, investigation, and incident response.
 
 LLM-assisted binary analysis and traffic inspection.
 
+- **[DeepZero](https://github.com/416rehman/DeepZero)** 🟢🔬 — Resumable Windows driver research framework combining Ghidra decompilation, static analysis, and optional LLM assessment through YAML pipelines.
 - **[Gepetto](https://github.com/JusticeRage/Gepetto)** 🟢 — IDA Pro plugin: GPT adds comments and meaningful variable names. *(★ 3,457 · updated 2026-08-15)*
 - **[ida-pro-mcp](https://github.com/mrexodia/ida-pro-mcp)** 🟢 — MCP bridge for IDA Pro exposing decompile, disassemble, xref, rename, and debugging workflows to LLM clients. *(★ 11,393 · updated 2026-08-17)*
 - **[GhidraMCP](https://github.com/LaurieWired/GhidraMCP)** 🟢 — MCP server exposing Ghidra reverse-engineering ops to any MCP-capable LLM. *(★ 9,805 · updated 2025-06-23)*
