@@ -1215,24 +1215,6 @@
               }
             },
             {
-              "name": "SpendShield",
-              "repo": "felixpg13-glitch/spendshield",
-              "desc": "Python policy & authorization layer for AI-agent spending decisions: deterministic ALLOW / APPROVAL / DENY against budgets, per-transaction caps, and merchant allow/block lists, with a hash-chained audit trail of every decision; ships as a library and an MCP server and is channel-agnostic (x402, Stripe, wallets).",
-              "license": "MIT",
-              "note": "— **note:** the MCP server does not itself enforce tool-level separation — hosts should expose only decision tools (spend_authorize / spend_status / spend_audit) to untrusted agents and keep management tools (spend_approve / spend_reset / policy_*) host-side. A signed single-use grant executor exists as an explicitly labeled experimental prototype, separate from the default authorize() flow; the audit hash chain detects partial tampering but is not keyed or externally anchored.",
-              "status": [
-                "open_source"
-              ],
-              "flags": [
-                "early_stage"
-              ],
-              "metrics": {
-                "stars": 2,
-                "updated": "2026-09-06",
-                "snapshot": "2026-09-07"
-              }
-            },
-            {
               "name": "ToolHive",
               "repo": "stacklok/toolhive",
               "org": "Stacklok",
@@ -1806,9 +1788,10 @@
                 "commercial_open"
               ],
               "flags": [
-                "copyleft"
+                "copyleft",
+                "heavy_runtime"
               ],
-              "note": "— **note:** AGPL-3.0 copyleft license; Gram is also the open-source stack behind Speakeasy's hosted AI control plane.",
+              "note": "— **note:** AGPL-3.0 copyleft license; Gram is also available as Speakeasy's hosted commercial control plane, while local development uses a full Docker/Mise stack.",
               "metrics": {
                 "stars": 266,
                 "updated": "2026-09-09",
@@ -3273,18 +3256,6 @@
             "updated": "2026-08-31",
             "snapshot": "2026-08-31"
           }
-        },
-        {
-          "name": "UpClaw",
-          "repo": "okdkebm/UpClaw",
-          "desc": "Single-file, zero-dependency Python CLI that runs a structured pentest pipeline (fingerprint, recon, 29 stdlib security checks incl. sqli/xss/ssti/subdomain-takeover/js-secrets/graphql) and optionally hands findings to any OpenAI-compatible model for prioritized analysis (scan --ai).",
-          "license": "Apache-2.0",
-          "status": [
-            "open_source"
-          ],
-          "flags": [
-            "authorized_testing_only"
-          ]
         }
       ]
     },
@@ -3611,14 +3582,6 @@
                 "updated": "2025-04-25",
                 "snapshot": "2026-08-17"
               }
-            },
-            {
-              "name": "http-detection-agent",
-              "repo": "ai-blueteam/http-detection-agent",
-              "desc": "Rust CLI and local MCP server for capability-aware HTTP attack detection.",
-              "status": [
-                "open_source"
-              ]
             }
           ]
         },
@@ -4745,7 +4708,17 @@
             "open_source",
             "research"
           ],
-          "license": "MIT"
+          "license": "MIT",
+          "flags": [
+            "heavy_runtime",
+            "authorized_testing_only"
+          ],
+          "note": "— **note:** the Windows-driver workflow requires an operator-provided Ghidra installation and optional LLM-provider credentials; analyze only drivers you are authorized to research.",
+          "metrics": {
+            "stars": 712,
+            "updated": "2026-09-10",
+            "snapshot": "2026-09-11"
+          }
         },
         {
           "name": "Gepetto",
@@ -5076,14 +5049,18 @@
         {
           "name": "Open-ReverseLab",
           "repo": "LING71671/open-reverselab",
-          "desc": "Agent-native AI reverse-engineering platform whose MCP server exposes Ghidra headless analysis (ghidra_headless_analyze, ghidra_summary_*) plus Frida, x64dbg, Rizin and YARA tooling, backed by a runnable CTF/APK/PE attack knowledge base.",
+          "desc": "Agent-native reverse-engineering workspace and MCP server combining Ghidra headless analysis with Frida, x64dbg, Rizin, YARA, and a runnable CTF/APK/PE knowledge base.",
           "status": [
             "open_source"
           ],
           "license": "GPL-3.0",
           "flags": [
-            "copyleft"
+            "copyleft",
+            "license_caveat",
+            "heavy_runtime",
+            "authorized_testing_only"
           ],
+          "note": "— **note:** the repository additionally asserts a mandatory disclaimer with use, redistribution, derivative-work, and indemnification terms beyond GPL-3.0. Optional installers download and execute numerous third-party offensive tools, sometimes from latest or moving upstream refs without checksums; review them before use and run only in an isolated, authorized lab.",
           "related": [
             {
               "label": "GhidraMCP",
