@@ -1778,6 +1778,26 @@
               }
             },
             {
+              "name": "Gram",
+              "repo": "speakeasy-api/gram",
+              "org": "Speakeasy",
+              "license": "AGPL-3.0",
+              "desc": "Open-source stack behind Speakeasy's AI control plane that centrally manages MCPs, Skills, and Assistants with granular permissions, policy enforcement, threat detection, and observability.",
+              "status": [
+                "open_source",
+                "commercial_open"
+              ],
+              "flags": [
+                "copyleft"
+              ],
+              "note": "— **note:** AGPL-3.0 copyleft license; Gram is also the open-source stack behind Speakeasy's hosted AI control plane.",
+              "metrics": {
+                "stars": 266,
+                "updated": "2026-09-09",
+                "snapshot": "2026-09-09"
+              }
+            },
+            {
               "name": "tirith",
               "repo": "sheeki03/tirith",
               "license": "AGPL-3.0 / commercial",
