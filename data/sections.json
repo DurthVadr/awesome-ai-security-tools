@@ -2255,6 +2255,34 @@
                 "updated": "2026-09-03",
                 "snapshot": "2026-09-04"
               }
+            },
+            {
+              "name": "shim-cli",
+              "repo": "GetSHIM/shim-cli",
+              "desc": "Local hooks for Claude Code, Codex, and Copilot CLI that detect secrets and personal data, mask them in eligible Claude Code tool results before the model reads them, and flag prompt-injection markers in those results, plus an opt-in loopback proxy that reports what a session sent.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "early_stage"
+              ],
+              "note": "— **note:** the project documents itself as a best-effort guard rather than a data-loss prevention boundary; with the default policy a secret typed into a Claude Code or Codex prompt is reported, not blocked, and tool-result masking is verified only on Claude Code. Young project with limited independent adoption signal.",
+              "related": [
+                {
+                  "label": "piighost",
+                  "url": "https://github.com/Athroniaeth/piighost"
+                },
+                {
+                  "label": "Parry-guard",
+                  "url": "https://github.com/vaporif/parry-guard"
+                }
+              ],
+              "metrics": {
+                "stars": 7,
+                "updated": "2026-09-16",
+                "snapshot": "2026-09-16"
+              }
             }
           ]
         }
