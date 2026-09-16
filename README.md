@@ -7,7 +7,7 @@
 
 **Type legend:** 🟢 public source / open-source · 🔬 research (paper / benchmark / dataset / framework) · 🟠 commercial with open components · ⚠️ restrictive, non-commercial, or unclear/no license — check before use.
 
-GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Most recently refreshed entry: 2026-09-14. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
+GitHub-hosted entries show static **★ stars** and **last-commit** snapshots; refresh them with `python3 scripts/update_github_metrics.py` before release. Most recently refreshed entry: 2026-09-16. Hugging Face model entries show license, access, and artifact metadata. Ordering within a section favors flagship and actively maintained projects.
 
 ---
 
@@ -233,6 +233,8 @@ Securing the AI agents themselves — auditing coding agents (Claude Code, Codex
   - **Related:** [Prismor](https://github.com/PrismorSec/prismor) · [mcp-context-protector](https://github.com/trailofbits/mcp-context-protector)
 - **[sofagent](https://github.com/KongFangXun/sofagent)** 🟢 — Commit-time audit and governance suite for AI coding agents that scans git diffs against deterministic rules, records local audit history, and exposes MCP tools for governance aggregation. — **note:** HMAC signing is optional, while local hooks, configuration, and key material remain accessible to same-user agents; the default setup is not fail-closed and Git hooks can be bypassed, so treat the history as local audit evidence rather than a hardened tamper-proof boundary. *(★ 42 · updated 2026-09-03)*
   - **Related:** [Pipelock](https://github.com/luckyPipewrench/pipelock)
+- **[shim-cli](https://github.com/GetSHIM/shim-cli)** 🟢 — Local hooks for Claude Code, Codex, and Copilot CLI that detect secrets and personal data, mask them in eligible Claude Code tool results before the model reads them, and flag prompt-injection markers in those results, plus an opt-in loopback proxy that reports what a session sent. — **note:** the project documents itself as a best-effort guard rather than a data-loss prevention boundary; with the default policy a secret typed into a Claude Code or Codex prompt is reported, not blocked, and tool-result masking is verified only on Claude Code. Young project with limited independent adoption signal. *(★ 7 · updated 2026-09-16)*
+  - **Related:** [piighost](https://github.com/Athroniaeth/piighost) · [Parry-guard](https://github.com/vaporif/parry-guard)
 
 ---
 
